@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+bundle exec rake spec
+bundle exec rake rubocop
+bundle exec ./script/sync-readme-usage README.md
